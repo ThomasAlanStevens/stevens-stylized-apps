@@ -73,7 +73,7 @@ input, select, textarea {
 		width: device-width;
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 470px) {
 
 		html, body {
 			min-width: 320px;
@@ -715,6 +715,25 @@ input, select, textarea {
 
 		}
 
+/* responsive iframes */
+
+figure{
+	height: 0;
+	padding-bottom: 56.25%;
+	position: relative;
+	width: 100%;
+}
+
+iframe{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+
+
 /* List */
 
 	ol {
@@ -1212,6 +1231,7 @@ input, select, textarea {
 				padding: 3rem 2rem;
 			}
 
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1343,6 +1363,7 @@ input, select, textarea {
 		}
 
 			#header nav ul li {
+				
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
 			}
@@ -1352,7 +1373,7 @@ input, select, textarea {
 				}
 
 				#header nav ul li a {
-					display: block;
+					display: inline-block;
 					min-width: 7.5rem;
 					height: 2.75rem;
 					line-height: 2.75rem;
@@ -1618,6 +1639,38 @@ input, select, textarea {
 
 		}
 
+/* Sections Inside Articles */
+
+
+
+
+
+
+
+@media screen and (max-width: 736px) {
+
+	#main article {
+		padding: 3.5rem 2rem 0.5rem 2rem ;
+	}
+
+		#main article .close:before {
+			top: 0.875rem;
+			left: 0.875rem;
+			width: 2.25rem;
+			height: 2.25rem;
+			background-size: 14px 14px;
+		}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	#main article {
+		padding: 3rem 1.5rem 0.5rem 1.5rem ;
+	}
+
+}
+
 /* Footer */
 
 	#footer {
@@ -1672,3 +1725,134 @@ input, select, textarea {
 .meetMe{
 	background: radial-gradient(#000916, #074daf)
 }
+
+/* Bold */
+
+.bold{
+	font-weight: 700;
+	border-bottom: 0;
+}
+
+/* flex */
+
+.flex{
+	display: flex;
+}
+
+.col{
+	flex-direction: column;
+}
+
+.row{
+	flex-direction: row;
+}
+
+.wrap{
+	flex-wrap: wrap;
+}
+
+
+/* Demacia vs. Noxus Styling */
+
+.center{
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+.dvnSpacing{
+	flex-basis: 30%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+}
+
+#tile-1, #tile-2, #tile-3, #tile-4, #tile-5, #tile-6, #tile-7, #tile-8, #tile-9{
+	border-radius: 5%;
+	margin: .5em;
+	border: solid 1px;
+	border-color:white;
+}
+
+.chooseSide > *, .victory > *, .defeat > *, .tie > *, .demaciaVsNoxusTurn{
+	margin-bottom: 1em;
+}
+
+.victory, .defeat, .board, .tie{
+	display: none;
+}
+
+#NOXUS{
+	margin-right: 2.5em;
+}
+
+#DEMACIA{
+	margin-left: 2.5em;
+}
+
+@media screen and (max-width: 1680px) {
+
+	.dvnSpacing{
+		height: 150px;
+	}
+
+}
+
+@media screen and (max-width: 580px) {
+
+	.dvnSpacing{
+		flex-basis: 28%;
+		height: 80px;
+	}
+
+}
+/* NASA App Styling */
+
+input.date{
+	color: black;
+	width: 20em;
+	margin: 0 auto;
+}
+
+.nasa > button{
+	width: 15em;
+	margin: 0 auto;
+}
+
+.nasa > input.date, .nasa > button, .nasa > img, .nasa >	p.info{
+	margin-bottom: 1em;
+}
+
+.nasaPhoto{
+	max-height: 400px;
+	max-width: 100%;
+	margin: auto;
+}
+
+.hideOverflow{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/* remove middle border right */
+
+.middle{
+	border-right: 0;
+}
+
+
+/* botw stylings */
+
+#botwSite{
+	display: block;
+	margin: 0 auto;
+}
+
+#botwSite a{
+	text-decoration: none;
+	border: 0px none;
+}
+
+
+

@@ -21,18 +21,17 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Arcade &  Apps</h1>
-								<p>A series of stylized apps by <a href="https://stevenssoftwareservices.com/">Stevens Software Services</a> and released for others to explore a few of<br />
-								 <a href="https://stevenssoftwareservices.com/">Thomas Stevens</a> <strong>smaller projects.</strong> Please feel free to check out more of my work at <a href="https://stevenssoftwareservices.com/dev">StevenssoftwareServices.com/dev</a></p>
+								<p>A series of small apps by <a class="bold"href="https://stevenssoftwareservices.com/">Stevens Software Services</a> and released for others to explore a few of<br />
+								 <a class="bold "href="https://stevenssoftwareservices.com/">Thomas Stevens</a> smaller projects. Please feel free to check out more of my work at <a class="bold" href="https://stevenssoftwareservices.com/dev">StevensSoftwareServices.com/dev</a></p>
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">BOTW Database Browser</a></li>
-								<li><a href="#about">Demacia vs. Noxus</a></li>
-								<li><a href="#work">NASA Photo Browser</a></li>
-								<li><a href="#work">Robot Math Assistant</a></li>
-								<li><a href="#contact">Meet Me</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li><a href="#me">Meet Thomas S.</a></li>
+								<li><a href="#botw">BOTW Database Browser</a></li>
+								<li><a href="#demaciaVsNoxus">Demacia vs. Noxus</a></li>
+								<li><a href="#nasa">NASA Photo Browser</a></li>
+								<!-- <li><a href="#elements">Elements</a></li> -->
 							</ul>
 						</nav>
 					</header>
@@ -40,31 +39,77 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+						<!-- BOTW -->
+							<article id="botw">
+								<h2 class="major">BOTW Database Browser</h2>
+								<p>An application that allows the user to browse through a database of all creatures, monsters, materials, equipment, and treasure in The Legend of Zelda: Breath of the Wild! Simply click the category you are interested in, enter a name, and search!</p>					
+								<img src="/images/botw.gif" alt="">
+								<button id="botwSite"><a href="https://botw-database-browser.netlify.app/"> View Full Site</a></button>
 							</article>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+						<!-- Demacia vs. Noxus -->
+							<article id="demaciaVsNoxus">
+								<h2 class="major">Demacia vs. Noxus</h2>
+								
+								<p>A stylized version of tic-tac-toe stylized using key members of the League of Legends lore! Choose a team, and enjoy facing against your arch-enemy in this strategy game!</p>
+								<h2 class="center demaciaVsNoxusTurn">Choose a side!</h2>
+								<section class="flex row wrap board">
+									<div class="dvnSpacing" id="tile-1"></div>
+									<div class="dvnSpacing" id="tile-2"></div>
+									<div class="dvnSpacing" id="tile-3"></div>
+									<div class="dvnSpacing" id="tile-4"></div>
+									<div class="dvnSpacing" id="tile-5"></div>
+									<div class="dvnSpacing" id="tile-6"></div>
+									<div class="dvnSpacing" id="tile-7"></div>
+									<div class="dvnSpacing" id="tile-8"></div>
+									<div class="dvnSpacing" id="tile-9"></div>
+									<button class="center reset">Reset</button>
+								</section>
+								<section class="chooseSide flex col">
+									<img class="image fit" src="/images/demaciaNoxus.jpg" alt="Demacia and Noxus preparing for war.">
+									<h3 class="center">WHO SHALL YOU SUPPORT IN THIS WAR?</h3>
+									<section class="center flex row">
+										<button id="NOXUS">NOXUS</button>
+										<button id="DEMACIA">Demacia</button>
+									</section>
+								</section>
+								<section class="victory">
+									<img class="image fit" src="/images/victory.jpg" alt="Victory Banner">
+									<p class="center">THIS IS JUST THE START OF OUR MANY VICTORIES! GLORY FOR RUNETERRA!</p>
+									<button class="center nextBattleV">Next Battle</button>
+								</section>
+								<section class="defeat">
+									<img class="image fit" src="/images/defeat.png" alt="Defeat Banner">
+									<p class="center">WE HAVE LOST THE BATTLE, BUT NOT THE WAR! COME, WE MUST PUSH FORWARD!</p>
+									<button class="center nextBattleD">Next Battle</button>
+								</section>
+								<section class="tie">
+									<img class="image fit" src="/images/tie.png" alt="Tie Banner">
+									<p class="center">There were no winners in this war...</p>
+									<button class="center nextBattleT">Next Battle</button>
+								</section>
+									
 							</article>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-							</article>
+						<!-- NASA -->
+							<article id="nasa">
+								<h2 class="major">NASA Photo Browser</h2>
+								<p c>An application that allows the user to access NASA's public APIs in order to view their photos of the day. Just pick a date and enjoy looking at and learning about the various photos of the day carefully choose by NASA!</p>
+								
+								<section class="flex col nasa">
+									<img class="nasaPhoto" src="/images/NASA.png" alt="NASA Photo Of The Day">
+									<p class="nasaInfo hideOverflow"></p>
+									<input class="date" type="date" name="date">
+									<section class="center flex row">
+										<button class="submit">GET PHOTO</button>
+										<button class="nasaInfoButton">Toggle Text</button>
+									</section>
 
-						<!-- Contact -->
-							<article id="contact">
+								</section>
+							</article>							
+
+						<!-- Meet Me -->
+							<article id="me">
 								<h2 class="major">Meet Me</h2>
 								<span class="image main meetMe"><img class="meetMe" src="images/headshot.png" alt="Thomas Stevens Headshot"/></span>
 								<Feel>Hello there, I'm <strong>Thomas Stevens</strong>,
@@ -74,7 +119,6 @@
 									<li><a href="https://www.linkedin.com/in/thomas-alan-stevens/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="https://github.com/ThomasAlanStevens" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 									<li><a href="mailto:thomaalanstevens@gmail.com?subject=Hello%20from%20Thomas%27s%20site" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-
 								</ul>
 							</article>
 
