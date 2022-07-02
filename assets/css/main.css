@@ -1819,7 +1819,7 @@ input.date{
 	margin: 0 auto;
 }
 
-.nasa > input.date, .nasa > button, .nasa > img, .nasa >	p.info{
+.nasa > input.date, .nasa > button, .nasa > img, .nasa > p.info{
 	margin-bottom: 1em;
 }
 
@@ -1847,6 +1847,7 @@ input.date{
 #botwSite{
 	display: block;
 	margin: 0 auto;
+	margin-top: 1em;
 }
 
 #botwSite a{
