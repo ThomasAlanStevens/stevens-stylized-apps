@@ -221,19 +221,6 @@ input, select, textarea {
 		font-size: 0.6rem;
 	}
 
-	@media screen and (max-width: 736px) {
-
-		h1 {
-			font-size: 1.75rem;
-			line-height: 1.4;
-		}
-
-		h2 {
-			font-size: 1.25em;
-			line-height: 1.5;
-		}
-
-	}
 
 	sub {
 		font-size: 0.8rem;
@@ -1638,14 +1625,12 @@ figure img{
 			}
 
 		}
+		
+		.middle{
+			border-right: 0;
+		}
 
-/* Sections Inside Articles */
-
-
-
-
-
-
+/* Sections Inside Articles Media Querries */
 
 @media screen and (max-width: 736px) {
 
@@ -1834,13 +1819,6 @@ input.date{
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
-
-/* remove middle border right */
-
-.middle{
-	border-right: 0;
-}
-
 
 /* botw stylings */
 
